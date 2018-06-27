@@ -72,6 +72,12 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/projects', (req , res) => {
+  res.render('projects',{
+    pageTitle: 'Projects Page'
+  });
+});
+
 //bad requests
 app.get('/bad', (req, res) => {
   res.send({
